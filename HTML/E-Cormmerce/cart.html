@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Shop - Shopping Cart</title>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Kai Shop</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="cart.html">Cart</a> |
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <hr>
+
+</header>
+
+<main>
+
+    <h1>🛒 Shopping Cart</h1>
+
+    <p>You have 3 products in your cart.</p>
+
+    <hr>
+
+    <table border="1" cellpadding="10">
+
+        <thead>
+
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    🎧 Wireless Headphones
+                </td>
+
+                <td>$79.99</td>
+
+                <td>
+                    <input
+                        type="number"
+                        value="1"
+                        min="1">
+                </td>
+
+                <td>$79.99</td>
+
+                <td>
+                    <a href="#">Remove</a>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    ⌚ Smart Watch Pro
+                </td>
+
+                <td>$129.99</td>
+
+                <td>
+                    <input
+                        type="number"
+                        value="1"
+                        min="1">
+                </td>
+
+                <td>$129.99</td>
+
+                <td>
+                    <a href="#">Remove</a>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    🎒 Travel Backpack
+                </td>
+
+                <td>$49.99</td>
+
+                <td>
+                    <input
+                        type="number"
+                        value="1"
+                        min="1">
+                </td>
+
+                <td>$49.99</td>
+
+                <td>
+                    <a href="#">Remove</a>
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <section>
+
+        <h2>Coupon Code</h2>
+
+        <form>
+
+            <label for="coupon">
+                Enter coupon:
+            </label>
+
+            <input
+                type="text"
+                id="coupon"
+                name="coupon"
+                placeholder="SAVE10">
+
+            <button type="submit">
+                Apply Coupon
+            </button>
+
+        </form>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>Order Summary</h2>
+
+        <table border="1" cellpadding="10">
+
+            <tr>
+                <td>Subtotal</td>
+                <td>$259.97</td>
+            </tr>
+
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+
+            <tr>
+                <td>Discount</td>
+                <td>-$10.00</td>
+            </tr>
+
+            <tr>
+                <th>Total</th>
+                <th>$249.97</th>
+            </tr>
+
+        </table>
+
+        <p>
+
+            <a href="products.html">
+                ← Continue Shopping
+            </a>
+
+            |
+
+            <a href="checkout.html">
+                Proceed to Checkout →
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
+
+<hr>
+
+<footer>
+
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="cart.html">Cart</a> |
+        <a href="checkout.html">Checkout</a>
+    </p>
+
+    <p>
+        <small>© 2026 Kai Shop. All rights reserved.</small>
+    </p>
+
+</footer>
+
+</body>
+</html>

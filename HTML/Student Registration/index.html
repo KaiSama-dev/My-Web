@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Registration Form</h1>
+        <p>Please complete the form below to register.</p>
+        <hr>
+    </header>
+
+    <main>
+
+        <form>
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend><strong>Personal Information</strong></legend>
+
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required>
+                </p>
+
+                <p>
+                    <label for="password">Password:</label><br>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+95 XXX XXX XXX">
+                </p>
+
+                <p>
+                    <label for="birthday">Date of Birth:</label><br>
+                    <input
+                        type="date"
+                        id="birthday"
+                        name="birthday">
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Gender -->
+            <fieldset>
+                <legend><strong>Gender</strong></legend>
+
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male">
+
+                <label for="male">Male</label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female">
+
+                <label for="female">Female</label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="other">
+
+                <label for="other">Other</label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Address -->
+            <fieldset>
+                <legend><strong>Address</strong></legend>
+
+                <p>
+                    <label for="country">Country:</label><br>
+
+                    <select
+                        id="country"
+                        name="country"
+                        required>
+
+                        <option value="">-- Select Country --</option>
+                        <option value="myanmar">Myanmar</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="japan">Japan</option>
+                        <option value="other">Other</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="city">City:</label><br>
+
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder="Enter your city">
+                </p>
+
+                <p>
+                    <label for="address">Full Address:</label><br>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="5"
+                        cols="40"
+                        placeholder="Enter your full address">
+                    </textarea>
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Education -->
+            <fieldset>
+                <legend><strong>Education Information</strong></legend>
+
+                <p>
+                    <label for="education">Highest Education Level:</label><br>
+
+                    <select
+                        id="education"
+                        name="education">
+
+                        <option value="">-- Select Education --</option>
+                        <option value="high-school">High School</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bachelor">Bachelor Degree</option>
+                        <option value="master">Master Degree</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="course">Choose a Course:</label><br>
+
+                    <select
+                        id="course"
+                        name="course">
+
+                        <option value="">-- Select Course --</option>
+                        <option value="web-development">
+                            Web Development
+                        </option>
+                        <option value="software-development">
+                            Software Development
+                        </option>
+                        <option value="graphic-design">
+                            Graphic Design
+                        </option>
+                        <option value="data-analysis">
+                            Data Analysis
+                        </option>
+                    </select>
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Skills -->
+            <fieldset>
+                <legend><strong>Skills</strong></legend>
+
+                <p>Please select your skills:</p>
+
+                <input
+                    type="checkbox"
+                    id="html"
+                    name="skills"
+                    value="html">
+
+                <label for="html">HTML</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="css"
+                    name="skills"
+                    value="css">
+
+                <label for="css">CSS</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="javascript"
+                    name="skills"
+                    value="javascript">
+
+                <label for="javascript">JavaScript</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="python"
+                    name="skills"
+                    value="python">
+
+                <label for="python">Python</label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Agreement -->
+            <fieldset>
+                <legend><strong>Agreement</strong></legend>
+
+                <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    required>
+
+                <label for="agreement">
+                    I confirm that the information I provided is correct.
+                </label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Buttons -->
+            <button type="submit">Register</button>
+
+            <button type="reset">Clear Form</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <p>
+            &copy; 2026 Student Registration Form.
+            Built with HTML only.
+        </p>
+    </footer>
+
+</body>
+</html>
